@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld />
+  <PrimeiroComponentVue />
 </template>
 
 <script setup>
