@@ -1,77 +1,52 @@
 <template>
-    <div>
-        <v-container class="fill-height">
-            <v-row justify="center" align="center">
-                <v-col cols="auto">
-                    <v-card width="350px" class="d-flex flex-column" color="teal-darken-4" variant="elevated"
-                        rounded="50%">
-                        <v-row align="center" justify="center">
-                            <v-col cols="12" sm="6" md="4" lg="8">
-                                <v-card-item>
-                                            <v-card-title class="text-center text-orange-darken-4 text-h5">
-                                                <h1>
-                                                    Login
-                                                </h1>
-                                            </v-card-title>
-                                </v-card-item>
-                            </v-col>
-                        </v-row>
-                        <v-row align="center" justify="center">
-                            <v-col cols="12" sm="6" md="4" lg="8">
-                                <v-card-item>
-                                            <v-form>
-                                                <v-row align="center" justify="center">
-                                                    <v-col cols="12">
-                                                        <v-text-field
-                                                            label="Nome do usuário"
-                                                            variant="underlined"
-                                                            dense
-                                                        >
-
-                                                        </v-text-field>
-                                                    </v-col>
-                                                </v-row>
-                                                <v-row align="center" justify="center">
-                                                    <v-col cols="12">
-                                                        <v-text-field
-                                                            label="Email"
-                                                            variant="underlined"
-                                                            dense
-                                                        >
-
-                                                        </v-text-field>
-                                                    </v-col>
-                                                </v-row>
-                                                <v-row align="center" justify="center">
-                                                    <v-col cols="12">
-                                                        <v-text-field
-                                                            label="Senha"
-                                                            variant="underlined"
-                                                            dense
-                                                        >
-
-                                                        </v-text-field>
-                                                    </v-col>
-                                                </v-row>
-                                            </v-form>
-                                </v-card-item>
-                            </v-col>
-                        </v-row>
-                        <v-row align="center" justify="center">
-                            <v-col cols="12" sm="6" md="4" lg="4">
-                                <v-card-item>
-                                    <v-btn 
-                                        style="max-width: 100%; width: 100%;"
-                                        color="orange-darken-4"
-                                    >
-                                        botão
-                                    </v-btn>
-                                </v-card-item>
-                            </v-col>
-                        </v-row>
-                    </v-card>
+    <v-sheet color="blue-grey-darken-4" :width="'35vw'" :elevation="24" class="pa-4 rounded-lg mx-auto">
+        <v-container>
+            <v-row justify="center">
+                <v-col cols="12" md="8">
+                    <h1 class="text-center text-h3 text-grey-lighten-4">Login</h1>
                 </v-col>
             </v-row>
         </v-container>
-    </div>
+
+        <v-form>
+            <v-container>
+                <v-row justify="center">
+                    <v-col cols="12" md="8">
+                        <v-text-field
+                            label="Login"
+                            variant="solo"
+                            rounded
+                            bg-color="blue-grey-darken-1"
+                            full-width>
+
+                        </v-text-field>
+                    </v-col>
+                </v-row>
+                <v-row justify="center">
+                    <v-col cols="12" md="8">
+                        <v-text-field
+                            label="Senha"
+                            variant="solo"
+                            type="password"
+                            rounded
+                            bg-color="blue-grey-darken-1"
+                            full-width
+                            gap="2">
+                        </v-text-field>
+                    </v-col>
+                </v-row>
+                <v-row justify="center">
+                    <v-col cols="12" md="8">
+                        <v-btn
+                            color="blue-grey-darken-3"
+                            class="mt-4"
+                            block
+                            gap="5">
+                            Entrar
+                        </v-btn>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </v-form>
+    </v-sheet>
 </template>
